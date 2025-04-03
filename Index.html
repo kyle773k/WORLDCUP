@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>�쒕뜡 臾멸뎄</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">�뵰 留덈쾿�� NFC媛� 留먰븯湲�... �뵰</p>
+    <button onclick="showRandomMessage()">�뚮윭�� �뺤씤�섍린</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "湲곕떎�� 蹂댁꽭��.",
+                "�� �쇱슂!",
+                "�� 踰� �� �대낫�몄슂.",
+                "醫뗭� �앷컖�댁뿉��!",
+                "�ㅼ떆 �쒕룄�대낫�몄슂."
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
